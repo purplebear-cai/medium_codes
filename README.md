@@ -6,11 +6,24 @@ Follow the instructions below to create the virtual environment and install requ
 # Create Conda Environement
 $ conda create -n medium_code python=3.8
 $ source activate medium_code
+```
 
+Install necessary packages.
+```
 # Install Required Libraries
 $ python -m pip install -r requirements.txt
 $ conda install -c huggingface -c conda-forge datasets=2.1.0
 $ conda install -c huggingface -c conda-forge transformers=4.17.0
+```
+
+The following commands are optional, please install based on your usecases.
+```
+# Use a conda environment in a Jupyter Notebook
+$ conda install -c anaconda ipykernel
+$ python -m ipykernel install --user --name=medium_code
+
+# Install mercury to convert notebook to web application
+$ conda install -c conda-forge mljar-mercury
 ```
 
 # II. Projects
